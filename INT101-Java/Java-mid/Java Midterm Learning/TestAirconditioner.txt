@@ -1,0 +1,7 @@
+package tiwproject;
+
+public class TestAirconditioner {
+    public static void main(String[] args) {
+        
+    }
+}

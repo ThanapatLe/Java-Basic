@@ -1,0 +1,19 @@
+package int101test;
+
+public class TestAirConditioner {
+    public static void main(String[] args) {
+        AirConditioner air1 = new AirConditioner();
+        System.out.println(air1);
+        /*System.out.println("Air status : "+air1.isAirOn());
+        System.out.println("Temp : "+air1.getTemp()+" C");
+        */
+        AirConditioner air2 = new AirConditioner(20, FanSpeed.HIGH);
+        System.out.println(air2);
+        
+        air1.increaseTemp();
+        air2.increaseTemp();
+        
+        System.out.println(air1);
+        System.out.println(air2);
+    }
+}

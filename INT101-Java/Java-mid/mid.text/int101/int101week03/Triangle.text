@@ -1,0 +1,20 @@
+package int101week03;
+
+public class Triangle {
+    float base, high, slope, slope1, area, perimeter;
+    
+    public Triangle(float base1, float high1){
+        this.area = (base1*high1)/2;
+        //this.slope = (base1*base1)+(high1*high1);
+        this.slope = (float) (Math.pow(base1, 2) + Math.pow(high1, 2)); 
+        this.slope1 = (float) Math.pow(slope, 0.5);
+        this.perimeter = base1 + high1 + slope1;
+       
+    }
+    public float getArea(){
+        return this.area;
+    }
+    public float getPerimeter(){
+        return this.perimeter;
+    }
+}

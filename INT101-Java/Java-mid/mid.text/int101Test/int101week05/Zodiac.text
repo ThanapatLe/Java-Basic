@@ -1,0 +1,4 @@
+package int101test;
+
+public enum Zodiac {
+    MONKEY, ROOSTER, DOG, PIG, RAT, OX, TIGER, RABBIT, DRAGON, SNAKE, HORSE, SHEEP};

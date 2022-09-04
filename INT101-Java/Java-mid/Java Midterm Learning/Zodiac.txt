@@ -1,0 +1,57 @@
+package Tiwsob;
+
+public class Zodiac {
+  int year;
+    boolean getZodiacaz;
+  
+  
+  
+public Zodiac(int year){
+    this.year = year;          
+}  
+ 
+public Zodiacaz getZodiac() {
+    return Zodiacaz.values()[year % 12];
+//    switch(year % 12) {
+//        case 0:
+//            return Zodiacaz.MONKEY.toString();
+//        case 1 : 
+//            return Zodiacaz.ROOSTER.toString();
+//        case 2 : 
+//            return Zodiacaz.DOG.toString();
+//        case 3 : 
+//            return Zodiacaz.PIG.toString();            
+//        case 4 : 
+//            return Zodiacaz.RAT.toString();
+//            
+//        case 5 : 
+//            return Zodiacaz.OX.toString();
+//            
+//        case 6 : 
+//            return Zodiacaz.TIGER.toString();
+//            
+//        case 7: 
+//            return Zodiacaz.RABBIT.toString();
+//            
+//        case 8: 
+//            return Zodiacaz.DRAGON.toString();
+//            
+//        case 9: 
+//            return Zodiacaz.SNAKE.toString();
+//        
+//        case 10 : 
+//            return Zodiacaz.HORSE.toString();
+//        
+//        case 11 : 
+//            return Zodiacaz.SHEEP.toString();       
+//    }
+//  return null;
+}
+
+    @Override
+    public String toString() {
+        return "Zodiac{" + "year=" + year + '}';
+    }
+
+}
+

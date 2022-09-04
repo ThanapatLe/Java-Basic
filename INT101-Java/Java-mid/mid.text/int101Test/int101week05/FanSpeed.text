@@ -1,0 +1,5 @@
+package int101test;
+
+public enum FanSpeed {
+    LOW, MEDIUM, HIGH
+};

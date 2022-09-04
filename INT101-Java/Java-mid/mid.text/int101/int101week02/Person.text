@@ -1,0 +1,56 @@
+package int101week02;
+
+public class Person {
+    String name, status="";
+    byte age;
+    float weight, height, BMI;
+    double BMR;
+
+    public Person(String name22, byte age22, float weight22, float height22) {
+        this.name = name22;
+        this.age = age22;
+        this.weight = weight22;
+        this.height = height22;
+        this.BMI = (float) (weight22/Math.pow(height22/100, 2));
+        //this.BMI = weight22/((height22/100)*(height22/100));
+        this.BMR = 66+(13.7*weight22)+(5*height22)-(6.8*age22);
+    }
+    
+    public String getName(){
+        return this.name;
+    }
+    public byte getAge(){
+        return this.age;
+    }
+    public float getWeight(){
+        return this.weight;
+    }
+    public float getHeight(){
+        return this.height;
+    }
+    public float getBMI(){
+        return this.BMI;
+    }
+    public String getStatus(){
+        if(BMI<18.5){
+            System.out.println("Underweight");
+        }
+        else if(BMI>=18.5 && BMI<=24.9){
+            System.out.println("Normal weight");
+        }
+        else if(BMI>=25.5 && BMI<=29.9){
+            System.out.println("Overweight");
+        }
+        else if(BMI>30){
+            System.out.println("Obesity");
+        }
+        return status;
+    }
+    public double getBMR(){
+        return this.BMR;
+    }
+
+    String categories() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}

@@ -1,0 +1,61 @@
+----------------[index.html]---------------------
+
+What is Big Data?
+
+Table of Contents
+-The Definition of Big Data
+-The Three Vs of Big Data
+-The History of Big Data
+-How Big Data Works
+
+----------------[bigdata.html]----------------------
+What exactly is big data?
+
+To really understand big data, it’s helpful to have some historical background. Here is Gartner’s definition, circa 2001 (which is still the go-to definition): Big data is data that contains greater variety arriving in increasing volumes and with ever-higher velocity. This is known as the three Vs.
+
+Put simply, big data is larger, more complex data sets, especially from new data sources. These data sets are so voluminous that traditional data processing software just can’t manage them. But these massive volumes of data can be used to address business problems you wouldn’t have been able to tackle before.
+
+----------------[threevs.html]---------------------
+The Three Vs of Big Data
+[--Begin Table--]
+Volume	
+The amount of data matters. With big data, you’ll have to process  high volumes of low-density, unstructured data. This can be data of unknown value, such as [Twitter](https://twitter.com) data feeds, clickstreams on a webpage or a mobile app, or sensor-enabled equipment. For some organizations, this might be tens of terabytes of data. For others, it may be hundreds of petabytes.
+
+Velocity	
+Velocity is the fast rate at which data is received and (perhaps) acted on. Normally, the highest velocity of data streams directly into memory versus being written to disk. Some internet-enabled smart products operate in real time or near real time and will require real-time evaluation and action.
+
+Variety	
+Variety refers to the many types of data that are available. Traditional data types were structured and fit neatly in a relational database. With the rise of big data, data comes in new unstructured data types. Unstructured and semistructured data types, such as text, audio, and video, require additional preprocessing to derive meaning and support metadata.
+[--End Table--]
+----------------[history.html]----------------------
+The History of Big Data
+
+Although the concept of big data itself is relatively new, the origins of large data sets go back to the 1960s and '70s when the world of data was just getting started with the first data centers and the development of the relational database.
+
+Around 2005, people began to realize just how much data users generated through [Facebook](https://www.facebook.com), YouTube, and other online services. Hadoop (an open-source framework created specifically to store and analyze big data sets) was developed that same year. NoSQL also began to gain popularity during this time.
+
+The development of open-source frameworks, such as Hadoop (and more recently, Spark) was essential for the growth of big data because they make big data easier to work with and cheaper to store. In the years since then, the volume of big data has skyrocketed. Users are still generating huge amounts of data—but it’s not just humans who are doing it.
+
+With the advent of the Internet of Things (IoT), more objects and devices are connected to the internet, gathering data on customer usage patterns and product performance. The emergence of machine learning has produced still more data.
+
+While big data has come far, its usefulness is only just beginning. Cloud computing has expanded big data possibilities even further. The cloud offers truly elastic scalability, where developers can simply spin up ad hoc clusters to test a subset of data.
+
+Benefits of Big Data and Data Analytics:
+
+Big data makes it possible for you to gain more complete answers because you have more information.
+More complete answers mean more confidence in the data—which means a completely different approach to tackling problems.
+----------------[howbigwork.html]----------------------
+How Big Data Works
+
+Big data gives you new insights that open up new opportunities and business models. Getting started involves three key actions:
+
+1. Integrate
+Big data brings together data from many disparate sources and applications. Traditional data integration mechanisms, such as ETL (extract, transform, and load) generally aren’t up to the task. It requires new strategies and technologies to analyze big data sets at terabyte, or even petabyte, scale.
+
+During integration, you need to bring in the data, process it, and make sure it’s formatted and available in a form that your business analysts can get started with.
+
+2. Manage
+Big data requires storage. Your storage solution can be in the cloud, on premises, or both. You can store your data in any form you want and bring your desired processing requirements and necessary process engines to those data sets on an on-demand basis. Many people choose their storage solution according to where their data is currently residing. The cloud is gradually gaining popularity because it supports your current compute requirements and enables you to spin up resources as needed.
+
+3. Analyze
+Your investment in big data pays off when you analyze and act on your data. Get new clarity with a visual analysis of your varied data sets. Explore the data further to make new discoveries. Share your findings with others. Build data models with machine learning and artificial intelligence. Put your data to work.

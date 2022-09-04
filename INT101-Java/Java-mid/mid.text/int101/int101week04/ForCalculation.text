@@ -1,0 +1,23 @@
+package int101week04;
+
+public class ForCalculation {
+    public void showNumber (int from, int to){
+        for(int i=from;i<=to;i++){
+            System.out.println(i);     
+        }
+    }
+    public int sumNumber (int from, int to){
+        int x=0;
+        for(int i=from;i<=to;i++){
+            x += i;
+        }return x;
+    }
+    public int gcd(int num1, int num2){
+        int gcd=1;
+        for(int k=2;(k <= num1)&&(k <= num2);k++){
+            if(num1%k==0 && num2%k==0){
+                gcd=k;}
+        }
+        return gcd;
+    }
+}

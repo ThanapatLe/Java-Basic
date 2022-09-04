@@ -1,0 +1,5 @@
+package tiwproject;
+
+public enum FanSpeed {
+    LOW,MEDIUM,HIGH
+};

@@ -1,0 +1,10 @@
+package int101week04;
+
+public class ForCalculationTest {
+    public static void main(String[] args) {
+        ForCalculation obj = new ForCalculation();
+        obj.showNumber(5, 10);
+        System.out.println(obj.sumNumber(5, 100));
+        System.out.println(obj.gcd(15, 12));
+    }
+}

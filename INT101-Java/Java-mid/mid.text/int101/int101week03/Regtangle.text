@@ -1,0 +1,16 @@
+package int101week03;
+
+public class Regtangle {
+    float wide, high, area, perimeter;
+    
+    public Regtangle(float wide,float high){
+        this.area = wide*high;
+        this.perimeter = (wide*2)+(high*2);
+    }
+    public float getArea(){
+        return this.area;
+    }
+    public float getPerimeter(){
+        return this.perimeter;
+    }
+}

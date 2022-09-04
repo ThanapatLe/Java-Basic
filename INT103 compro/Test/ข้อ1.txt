@@ -1,0 +1,197 @@
+
+package Changwat;
+
+public class Changwat {
+       private int id;
+    private String nameT;
+    private String nameE;    
+    private Location location;
+   
+
+    public Changwat(int id, String nameT, String nameE, Location location) {
+        this.id = id;
+        this.nameT = nameT;
+        this.nameE = nameE;
+        this.location = location;
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNameT() {
+        return nameT;
+    }
+
+    public void setNameT(String nameT) {
+        this.nameT = nameT;
+    }
+
+    public String getNameE() {
+        return nameE;
+    }
+
+    public void setNameE(String nameE) {
+        this.nameE = nameE;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Changwat{" + "id=" + id + ", nameT=" + nameT + ", nameE=" + nameE + ", location=" + location + '}';
+    }
+    
+}
+
+
+package Changwat;
+
+import java.util.ArrayList;
+
+public interface ChangwatDao {
+
+    public ArrayList<Changwat> findbyId(int id);
+
+    public ArrayList<Changwat> findbyName(String name);
+
+    public int insert(Changwat ch);
+
+
+}
+
+
+package Changwat;
+
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
+public class ChangwatDaoImp implements ChangwatDao{
+
+    @Override
+    public ArrayList<Changwat> findbyId(int id) {
+     ArrayList<Changwat> ch = new ArrayList<>();
+        String sql = "select * from changwat where ch_id = ?";
+        try ( Connection conn = DatabaseConnection.getConnection();  PreparedStatement stm = conn.prepareStatement(sql)) {
+            stm.setInt(1, id);
+
+            ResultSet rs = stm.executeQuery();
+            while (rs.next()) {
+                ch.add(new Changwat(rs.getInt("ch_id"),rs.getString("changwat_t") , rs.getString("changwat_e"), new Location(rs.getFloat("ch_lat"),rs.getFloat("ch_long")))
+                );
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ChangwatDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return ch;
+    }
+
+    @Override
+    public ArrayList<Changwat> findbyName(String name) {
+          ArrayList<Changwat> ch = new ArrayList<>();
+        String sql = "select * from changwat where changwat_t = ?";
+        try ( Connection conn = DatabaseConnection.getConnection();  PreparedStatement stm = conn.prepareStatement(sql)) {
+            stm.setString(1, "%"+name+"%");
+
+            ResultSet rs = stm.executeQuery();
+            while (rs.next()) {
+                ch.add(new Changwat(rs.getInt("ch_id"),rs.getString("changwat_t") , rs.getString("changwat_e"), new Location(rs.getFloat("ch_lat"), rs.getFloat("ch_long")))
+                );
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(ChangwatDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return ch;
+    }
+
+    @Override
+    public int insert(Changwat ch) {
+       String sql = "insert into changwat values(?,?,?,?,?)";
+       try ( Connection conn = DatabaseConnection.getConnection();  PreparedStatement stm = conn.prepareStatement(sql)) {
+            stm.setInt(1, ch.getId());
+            stm.setString(2, ch.getNameE());
+            stm.setString(3, ch.getNameT());
+            stm.setDouble(4, ch.getLocation().getLatitude());
+            stm.setDouble(5,ch.getLocation().getLongitude());
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(ChangwatDaoImp.class.getName()).log(Level.SEVERE, null, ex);
+            return 0;
+        }
+        return 1;
+        
+    }
+    }
+
+
+
+package Changwat;
+
+import java.sql.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class DatabaseConnection {
+    
+    public static Connection getConnection (){
+        Connection con = null;
+        try {
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://34.126.140.67:3306/tambon04?zeroDateTimeBehavior=CONVERT_TO_NULL,","std_63_049","pwd_63_049");
+            
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(DatabaseConnection.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(DatabaseConnection.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return con;
+    }
+    
+}
+
+
+package Changwat;
+
+public class Location {
+    
+    private float latitude;
+    private float longitude;
+
+    public Location(float latitude, float longitude) {
+        this.latitude = latitude;
+        this.longitude = longitude;
+    }
+
+    public double getLatitude() {
+        return latitude;
+    }
+
+    public double getLongitude() {
+        return longitude;
+    }
+
+    @Override
+    public String toString() {
+        return "Location{" + "latitude=" + latitude + ", longitude=" + longitude + '}';
+    }
+    
+    
+}
+
+
+

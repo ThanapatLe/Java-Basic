@@ -1,0 +1,16 @@
+package int101week03;
+
+public class Hexagon {
+    double width, area, perimeter;
+    public Hexagon(double width00){
+        this.width = width00;
+        this.area = 3*Math.sqrt(3)/2*Math.pow(width, 2);
+        this.perimeter = width*6;
+    }
+    public double getArea(){
+        return this.area;
+    }
+    public double getPerimeter(){
+        return this.perimeter;
+    }
+}

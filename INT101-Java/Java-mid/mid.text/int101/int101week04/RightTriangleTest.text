@@ -1,0 +1,13 @@
+package int101week04;
+
+public class RightTriangleTest {
+    public static void main(String[] args) {
+        RightTriangle obj = new RightTriangle();
+        obj.printStar(5);
+        System.out.println();
+        obj.printNumber(5);
+        System.out.println();
+        obj.printAlphabet(5);
+        System.out.println();
+    }
+}

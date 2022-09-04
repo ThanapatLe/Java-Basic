@@ -1,0 +1,88 @@
+package int101test;
+
+public class AirConditioner {
+
+    //attribute
+    private static final int MIN_TEMP = 20, MAX_TEMP = 30;
+    private FanSpeed fanSpeed;
+    private boolean airOn, fanOn;
+    private int temp;
+
+    public AirConditioner() {
+        this.temp = 25;
+        this.airOn = true;
+        this.fanOn = true;
+        this.fanSpeed = FanSpeed.LOW;
+    }
+
+    public boolean cheakValidTemp(int temp) {
+        if (temp <= MAX_TEMP && temp >= MIN_TEMP) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public AirConditioner(int temp, FanSpeed fanSpeed) {
+        this.temp = (cheakValidTemp(temp) ? temp : 25);
+        /*if(cheakValidTemp(temp))
+            this.temp=temp;
+        else
+            this.temp=25;
+         */
+        this.airOn = true;
+        this.fanOn = true;
+        this.fanSpeed = fanSpeed;
+
+    }
+
+    public boolean isAirOn() {
+        return airOn;
+    }
+
+    public int getTemp() {
+        return temp;
+    }
+
+    public void turnAirOnOff() {
+        if (airOn) {
+            airOn = false;
+            fanOn = false;
+        } else {
+            airOn = true;
+            fanOn = true;
+        }
+    }
+
+    public void increaseTemp() {
+        if (temp < MAX_TEMP) {
+            temp = temp + 1;
+        }
+    }
+
+    public void decreaseTemp() {
+        if (temp > MIN_TEMP) {
+            temp = temp - 1;
+        }
+    }
+
+    public void changFanSpeed() {
+        if (fanSpeed == FanSpeed.LOW) {
+            fanSpeed = FanSpeed.MEDIUM;
+        } else if (fanSpeed == FanSpeed.MEDIUM) {
+            fanSpeed = FanSpeed.HIGH;
+        } else {
+            fanSpeed = FanSpeed.LOW;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "AirConditioner{"
+                + "fanSpeed=" + fanSpeed
+                + ", airOn=" + airOn
+                + ", fanOn=" + fanOn
+                + ", temp=" + temp + '}';
+    }
+
+}

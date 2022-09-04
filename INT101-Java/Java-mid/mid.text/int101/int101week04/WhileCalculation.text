@@ -1,0 +1,36 @@
+package int101week04;
+
+public class WhileCalculation {
+    public void showNumber (int from, int to){
+        while(from<=to){
+            System.out.println(from);
+            from++;     
+        }
+    }
+    /*public void showNumber (int from, int to){
+        int counter = from;
+        while(counter<=to){
+            System.out.println(counter);
+            counter++;     
+        }
+    }*/
+    public int sumNumber (int from, int to){
+        int x=0;
+        while(from<=to){
+            x += from;
+            from++;
+        }return x;
+    }
+    public int gcd(int num1, int num2){
+        int gcd=1;
+        int k=2;
+        while((k <= num1)&&(k <= num2)){
+            if(num1%k==0 && num2%k==0){
+                gcd=k;}
+            else{}
+                k++;
+        }
+        return gcd;
+    }
+
+}

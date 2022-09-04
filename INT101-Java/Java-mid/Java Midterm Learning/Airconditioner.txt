@@ -1,0 +1,49 @@
+package tiwproject;
+
+public class Airconditioner {
+private final static int  MIN_TEMPERATURE = 20;
+private final static int  MAX_TEMPERATURE = 30;
+private boolean airOn;
+private boolean airOff; 
+private int temp;
+private  FanSpeed fanSpeed = Fanspeed.LOW ;
+
+public Airconditioner(){
+
+}
+
+public Airconditioner(int targetTemp,FanSpeed fanSpeed){
+
+}
+
+public boolean isAirOn (){
+return airOn;
+}
+
+public int getTemp (){
+
+    
+}
+
+public void turnAirOnOff (){
+
+
+}
+
+public void increaseTemp(){
+
+
+}
+
+public void decreaseTemp(){
+
+
+}
+
+public void chanheFanSpeed(){
+
+}
+
+
+
+}

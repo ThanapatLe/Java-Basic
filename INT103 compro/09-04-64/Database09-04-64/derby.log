@@ -1,0 +1,37 @@
+Fri Apr 09 14:39:02 ICT 2021 : Apache Derby Network Server - 10.14.2.0 - (1828579) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Fri Apr 09 14:39:02 ICT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0178-b591-e9c6-ffff804bc861 
+on database directory C:\Users\ADMIN\Desktop\Database\wishlist with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e0e2f2a 
+Loaded from file:/C:/Users/ADMIN/Desktop/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=C:\Users\ADMIN\Desktop\db-derby-10.14.2.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\ADMIN\Desktop\Database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Apr 09 14:39:03 ICT 2021:
+Shutting down instance a816c00e-0178-b591-e9c6-ffff804bc861 on database directory C:\Users\ADMIN\Desktop\Database\wishlist with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e0e2f2a 
+Fri Apr 09 14:39:03 ICT 2021 Thread[DRDAConnThread_3,5,main] (DATABASE = wishlist), (DRDAID = {2}), Database 'wishlist' shutdown.
+----------------------------------------------------------------
+Fri Apr 09 14:40:34 ICT 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a65c80ac-0178-b591-e9c6-ffff804bc861 
+on database directory C:\Users\ADMIN\Desktop\Database\wishlist with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e0e2f2a 
+Loaded from file:/C:/Users/ADMIN/Desktop/db-derby-10.14.2.0-lib/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=C:\Users\ADMIN\Desktop\db-derby-10.14.2.0-lib
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=C:\Users\ADMIN\Desktop\Database
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri Apr 09 23:46:24 ICT 2021: Shutting down Derby engine
+----------------------------------------------------------------
+Fri Apr 09 23:46:24 ICT 2021:
+Shutting down instance a65c80ac-0178-b591-e9c6-ffff804bc861 on database directory C:\Users\ADMIN\Desktop\Database\wishlist with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e0e2f2a 
+----------------------------------------------------------------

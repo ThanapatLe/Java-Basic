@@ -1,0 +1,31 @@
+package int101week02;
+
+public class Fitness {
+
+    public static void main(String[] args) {
+        Person ice = new Person("Ice", (byte) 20, 60, 170);
+        Person ant = new Person("Ant", (byte) 18, 63, 168);
+
+        String str = ice.getName();
+        System.out.println(str);
+
+        byte age = ice.getAge();
+        System.out.println(age);
+
+        float weight = ice.getWeight();
+        System.out.println(weight);
+
+        float height = ice.getHeight();
+        System.out.println(height);
+
+        float bmi = ice.getBMI();
+        System.out.println(bmi);
+
+        System.out.printf("Your status: ");
+        String status = ice.getStatus();
+        System.out.println(status);
+
+        double bmr = ice.getBMR();
+        System.out.println(bmr);
+    }
+}

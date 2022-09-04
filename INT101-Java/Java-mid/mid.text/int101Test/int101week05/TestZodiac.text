@@ -1,0 +1,10 @@
+package int101test;
+
+public class TestZodiac {
+    public static void main(String[] args) {
+        int year = FindZodiac.readYear();
+        System.out.println("Year: "+year);
+        Zodiac yourZodiac = FindZodiac.findZodiac(year);
+        System.out.println("Your zodiac :"+yourZodiac);
+    }
+}

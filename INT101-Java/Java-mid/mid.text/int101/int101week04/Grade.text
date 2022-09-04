@@ -1,0 +1,30 @@
+package int101week04;
+
+public class Grade {
+    public static void main(String[] args) {
+    String grade = "B+";
+    double gradeValue = 0;
+    switch (grade) {
+        case "A":
+            gradeValue = 4;
+            break;
+        case "B+":
+            gradeValue = 3.5;
+            break;
+        case "B":
+            gradeValue = 3;
+            break;
+        case "C+":
+            gradeValue = 2.5;
+            break;
+        case "C":
+            gradeValue = 2;
+            break;
+        case "D":
+            gradeValue = 1;
+            break;
+        case "F":
+            gradeValue = 0;
+        default:
+    }System.out.println(grade);      
+}*/

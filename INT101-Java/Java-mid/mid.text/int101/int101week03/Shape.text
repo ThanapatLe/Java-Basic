@@ -1,0 +1,52 @@
+package int101week03;
+
+import java.util.Scanner;
+
+public class Shape {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.printf("Enter your last three degits: ");
+        int rem, id = input.nextInt();
+        rem=id%4;
+        switch (rem) {
+            case 0:
+                {
+                Regtangle C = new Regtangle((float) 2, 3);
+                System.out.println("Regtangle");
+                float area3 = C.getArea();
+                System.out.println(area3);
+                float perimeter3 = C.getPerimeter();
+                System.out.println(perimeter3);
+                break;
+                }
+            case 2:
+                Triangle A = new Triangle((float) 4, 3);
+                System.out.println("Triangle");
+                float area1 = A.getArea();
+                System.out.println(area1);
+                float perimeter1 = A.getPerimeter();
+                System.out.println(perimeter1);
+                break;
+            case 1:
+                Circle B = new Circle((double) 1);
+                System.out.println("Circle");
+                double area2 = B.getArea();
+                System.out.println(area2);
+                double perimeter2 = B.getPerimeter();
+                System.out.println(perimeter2);
+                break;
+            case 3:
+                {
+                Hexagon D = new Hexagon((double) 2);
+                System.out.println("Hexagon");
+                double area3 = D.getArea();
+                System.out.println(area3);
+                double perimeter3 = D.getPerimeter();
+                System.out.println(perimeter3);
+                break;
+                }
+            default:
+                break;
+        }
+    }
+}

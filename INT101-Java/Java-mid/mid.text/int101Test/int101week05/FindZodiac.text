@@ -1,0 +1,39 @@
+package int101test;
+import java.util.Scanner;
+
+public class FindZodiac {
+    
+    public static Zodiac findZodiac(int year){
+       switch (year % 12) {
+            case 0: return Zodiac.MONKEY;
+            case 1: return Zodiac.ROOSTER;
+            case 2: return Zodiac.DOG;
+            case 3: return Zodiac.PIG;
+            case 4: return Zodiac.RAT;
+            case 5: return Zodiac.OX;
+            case 6: return Zodiac.TIGER;
+            case 7: return Zodiac.RABBIT;
+            case 8: return Zodiac.DRAGON;
+            case 9: return Zodiac.SNAKE;
+            case 10: return Zodiac.HORSE;
+            case 11: return Zodiac.SHEEP;
+            default: return null;
+       }
+    }
+    public static int readYear() {
+        Scanner sc = new Scanner(System.in);
+        
+        /*System.out.println("Enter your Name and Surname :");
+        String name = sc.nextLine();
+        System.out.println("Name :"+name);*/
+        
+        /*System.out.println("Do you want to continue (Y/N)");
+        String temp=sc.next();
+        char answer=temp.charAt(0);
+        System.out.println("answer : "+answer);*/
+        
+        System.out.println("Enter a Year : ");
+        int year = sc.nextInt();
+        return year;
+    }
+}

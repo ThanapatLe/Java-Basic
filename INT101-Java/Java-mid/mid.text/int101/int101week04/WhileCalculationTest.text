@@ -1,0 +1,10 @@
+package int101week04;
+
+public class WhileCalculationTest {
+    public static void main(String[] args) {
+        WhileCalculation obj = new WhileCalculation();
+        obj.showNumber(5, 10);
+        System.out.println(obj.sumNumber(5, 100));
+        System.out.println(obj.gcd(15, 12));
+    }
+}

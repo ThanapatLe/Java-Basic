@@ -1,0 +1,22 @@
+System.out.println("ไม่พบ Database driver! ให้ทำดังต่อไปนี้");
+            System.out.println("\nเพิ่มไฟล์ mysql-connector-java-8.0.19.jar ไว้ที่ Libraries");
+            System.out.println("download ได้ที่ https://dev.mysql.com/downloads/connector/j/");
+        } catch (SQLException ex) {
+            "\n---------"
+                  "ตรวจสอบ");
+            "USERNAME="+USERNAME);
+            "PASSWORD="+PASSWORD);
+            "   aa หมายถึง รหัสนักศึกษา 2 ตัวแรก"
+            "   bbb หมายถึง รหัสนักศึกษา 3 ตัวหลัง"
+            ("URI="+URI)
+            "   retail_db_0X  X หมายถึง เศษเหลือจากการเอา bbb หารด้วย 5 (bbb mod 5)"
+            "\n** ถ้าแก้ไขถูกต้องแล้วยังขึ้นข้อความเหล่านี้อยู่ให้คลิกขวาที่โปรเจคเลือก Clean"
+            "\n\nหากยังไม่สามารถเชื่อมต่อ databses ได้"
+           "ให้ทดลองเชื่อมต่อ database ให้คลิกที่หน้าต่าง Services ดูที่หัวข้อ Databases"
+            "\n1 คลิกขวาที่ Databases เลือก New Connection..."
+            "\n2 Driver File(s) เป็นไฟล์ mysql-connector-java-8.0.19.jar "
+           "\n3 ทดลองต่อไปยัง Database ตามข้อมูลด้านบน"
+            "---------\n"
+           หากลง MySQL ไว้ในเครื่องตนเอง (MySQL 5.7) แล้วอยากได้ข้อมูลเพื่อใช้ทดสอบสามารถ import ข้อมูลได้จาก
+            https://github.com/praisan/hello-world/blob/master/retail_db_mysqldump.sql
+        
